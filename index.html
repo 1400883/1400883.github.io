@@ -32,6 +32,12 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<style type="text/css">
+			p#backButton {
+				text-align: left;
+				margin-left: 10px;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -44,6 +50,127 @@
 					<p>&nbsp;</p>
 					<h2><span style="font-size: 0.8em">P</span>l<span style="font-size: 1.3em">o</span><span style="display: inline-block; -moz-transform: scaleX(-1); -webkit-transform: scaleX(-1); filter: FlipH;">k</span><span style="font-size: 0.8em">i</span></h2>
 					<p>Verkkosovelluskehitys<br>LTP7026</p>
+				</section>
+				
+					<section>
+						<h3>Mielestäni tärkeimpiä verkkoprotokollia:</h3>
+						<a href="#/2">HTTP</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#/3">TCP</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#/4">WebSocket</a>
+					</section>
+				
+				
+				<section>
+					<section>
+						<h1>HTTP</h1>
+					</section>
+					<section>
+						<h2>HTTP</h2>
+						<ul>
+							<li>Noudattaa asiakas-palvelin-mallia:
+								<ul><li>Asiakas tekee pyynnön &rarr; palvelin vastaa</li></ul>
+							</li>
+							<li>Toimii tavallisesti TCP-protokollan päällä</li>
+							<li>1996: HTTP V1.0 &nbsp;&rarr;&nbsp; 1997: HTTP/1.1 &nbsp;&rarr;&nbsp; 2015: HTTP/2.0</li>
+						</ul>
+						<p id="backButton"><a href="#/2">&uArr;</a></p>
+					</section>
+					<section>
+						<p>HTTP/1.1 standardimääritykset:</p>
+						<ul>
+							<li><a href="https://tools.ietf.org/html/rfc7230">RFC7230</a></li>
+							<li><a href="https://tools.ietf.org/html/rfc7231">RFC7231</a></li>
+							<li><a href="https://tools.ietf.org/html/rfc7232">RFC7232</a></li>
+							<li><a href="https://tools.ietf.org/html/rfc7233">RFC7233</a></li>
+							<li><a href="https://tools.ietf.org/html/rfc7234">RFC7234</a></li>
+							<li><a href="https://tools.ietf.org/html/rfc7235">RFC7235</a></li>
+						</ul>
+						<p>HTTP/2.0 standardimääritys:</p>
+						<ul>
+							<li><a href="https://tools.ietf.org/html/rfc7540">RFC7540</a></li>
+						</ul>
+						<p id="backButton"><a href="#/2">&uArr;</a></p>
+					</section>
+					<section>
+						<h3>HTTP-aiheisia<br>JavaScript-linkkejä<br>ohjelmoijalle</h3>
+						<ul>
+						<li><a href="https://www.youtube.com/watch?v=czmulJ9NBP0">5 tunnin videopläjäys node.js + mm. HTTP-palvelin</a></li>
+						<li><a href="https://nodejs.org/api/net.html">node.js TCP-dokumentaatio</a></li>
+						<li><a href="https://github.com/request/request">näppärä HTTP-asiakaspaketti node.js:lle</a></li>
+						</ul>
+						<p id="backButton"><a href="#/2">&uArr;</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>TCP</h1>
+					</section>
+					<section>
+						<h2>TCP</h2>
+						<ul>
+							<li>Protokolla tiedonsiirtoyhteyden luomiseksi IP-verkossa</li>
+							<li>Luotettava, sisältää virheenkorjausmekanismin
+								<ul><li>Kadonnut paketti lähetetään uudelleen</li></ul>
+							</li>
+							<li>Toimii muun muassa seuraavien protokollien alustana:
+							<ul><li>HTTP</li><li>SMTP</li><li>FTP</li><li>WebSocket</li></ul></li>
+							<li>1974: perus-TCP &nbsp;&rarr;&nbsp; 1981: TCP v4</li>
+						</ul>
+						<p id="backButton"><a href="#/3">&uArr;</a></p>
+					</section>
+					<section>
+						<p>Alkuperäinen TCP-standardimääritys:</p>
+						<ul>
+							<li><a href="https://tools.ietf.org/html/rfc675">RFC675</a></li>
+						</ul>
+						<p>TCP v4 -standardimääritys:</p>
+						<ul>
+							<li><a href="https://tools.ietf.org/html/rfc793">RFC793</a></li>
+						</ul>
+						
+						<p id="backButton"><a href="#/3">&uArr;</a></p>
+					</section>
+					<section>
+						<h3>TCP-aiheisia<br>JavaScript-linkkejä<br>ohjelmoijalle</h3>
+						<ul>
+						<li><a href="https://nodejs.org/api/http.html">node.js TCP-dokumentaatio</a></li>
+						<li><a href="http://www.davidmclifton.com/2011/07/22/simple-telnet-server-in-node-js/">node.js: TCP:n päälle rakennettu telnet-palvelinesimerkki</a></li>
+						</ul>
+						<p id="backButton"><a href="#/3">&uArr;</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>WebSocket</h1>
+					</section>
+					<section>
+						<h2>WebSocket</h2>
+						<ul>
+							<li>Protokolla kaksisuuntaiseen datasiirtoon yhden TCP-yhteyden yli</li>
+							<li>Suunniteltu webselain ja -palvelinympäristöön, mutta sovellettavissa myös muuhun asiakas-palvelin-käyttöön</li>
+							<li>Mahdollistaa datan lähettämisen asiakkaalle palvelimen aloitteesta</li>
+							<li>2011: WebSocket</li>
+						</ul>
+						<p id="backButton"><a href="#/4">&uArr;</a></p>
+					</section>
+					<section>
+						<p>WebSocket-standardimääritys:</p>
+						<ul>
+							<li><a href="https://tools.ietf.org/html/rfc6455">RFC6455</a></li>
+						</ul>
+						<p id="backButton"><a href="#/4">&uArr;</a></p>
+					</section>
+					<section>
+						<h3>Websocket-aiheisia<br>JavaScript-linkkejä<br>ohjelmoijalle</h3>
+						<ul>
+						<li><a href="https://w3c.github.io/websockets/">WebSocket-API</a></li>
+						<li><a href="http://socket.io/">node.js: WebSocket-wrapper-moduuli </a></li>
+						<li><a href="http://davidwalsh.name/websocket">node.js: WebSocket-esimerkkejä</a></li>
+						</ul>
+						<p id="backButton"><a href="#/4">&uArr;</a></p>
+					</section>
 				</section>
 			</div>
 
@@ -63,7 +190,7 @@
 				center: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
-				width: 350,
+				// width: 700,
 				// Optional reveal.js plugins
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
